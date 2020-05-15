@@ -1,0 +1,137 @@
+body{
+    background-color: #F9F9FF;
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 0;
+}
+header{
+    width: 100%;
+    height: 80px;
+    font-family: 'Baloo 2', cursive;
+     /* background: linear-gradient(#FC6471 10%,#FF7477 40%,#EB9486);  */
+    /* background-color: #c77dff;  */
+    /* background-color:#FF7477 ; */
+    background-color: #2C2A4A;
+    color: #F8F7FF;
+    
+}
+.container-header{
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: 80px;
+    /* position:fixed */
+}
+.about-me{
+    margin: 5px;
+    padding: 10px;
+    justify-content: center;
+    text-align: center;
+    display: flex; 
+}
+.about-me a{
+    margin: 7px;
+    padding-top: 5px;
+    text-decoration: none;
+    color: #F8F7FF;
+}
+.name-header{
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+}
+.name-header h1{
+    margin: 0;
+}
+.networks{
+    margin: 5px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+.networks a{
+    margin: 7px;
+    padding-top: 10px;
+    text-decoration: none;
+    text-align: center;
+    color: #F8F7FF;
+
+}
+.introduction{
+    margin: 0;
+    height: 300px;
+    font-family: 'Assistant', sans-serif;
+}
+
+.container-lines{
+    padding-top: 40px;
+    padding-left: 60px;
+}
+.container-lines h1{
+    font-size: 40px;
+    margin-top: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 10px;
+}
+.container-lines p{
+    font-size: 30px;
+    margin-top: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 10px;
+    padding-right: 50px;
+}
+
+.container-about{
+    font-size: 20px;
+    padding: 50px 80px 50px 80px;
+}
+section{
+    margin: 20px;
+    padding: 20px;
+    
+}
+.title{
+    font-family: 'Assistant', sans-serif;
+    padding-left:70px;
+    padding-right: 70px;
+}
+.container-allwork{
+    padding: 20px 32px 50px 32px;
+}
+
+.container-work{
+    display: grid;
+    grid-gap: 20px;
+    /* grid-template-columns: 1fr 1fr; */
+      /* grid-template-columns: repeat(2,440px);  */
+    grid-template-columns: repeat(auto-fit, minmax(400px,380px)); 
+    grid-template-rows: 550px;
+    
+
+}
+.container-project{
+    width: 350px;
+    height: 340px; 
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    justify-self: center;
+    background-color: #7E7F9A;
+    border-radius: 30px;
+    
+}
+.container-project img{
+    align-self: center;
+    justify-self: center;
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+}
+.project-description{
+    background-color: #F9F9FF;
+}
+.project-description p{
+    color: #8F9294;
+}
