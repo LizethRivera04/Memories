@@ -1,46 +1,27 @@
 body{
-    background-color: #F9F9FF;
+    background-color: #0B132B;
     font-family: 'Nunito Sans', sans-serif;
     margin: 0;
+    width: 100vw;
+    color: #FFFFFF;
 }
 header{
+
     width: 100%;
-    height: 80px;
+    height: 60px;
     font-family: 'Baloo 2', cursive;
      /* background: linear-gradient(#FC6471 10%,#FF7477 40%,#EB9486);  */
     /* background-color: #c77dff;  */
     /* background-color:#FF7477 ; */
-    background-color: #2C2A4A;
-    color: #F8F7FF;
+    background-color: #ecc1d6;
+    color: #0B132B;
     
 }
 .container-header{
-    display: grid;
-    grid-template-columns: 25% 50% 25%;
-    grid-template-rows: 80px;
-    /* position:fixed */
+    display: flex;
+   justify-content: start;
 }
-.about-me{
-    margin: 5px;
-    padding: 10px;
-    justify-content: center;
-    text-align: center;
-    display: flex; 
-}
-.about-me a{
-    margin: 7px;
-    padding-top: 5px;
-    text-decoration: none;
-    color: #F8F7FF;
-}
-.name-header{
-    margin: 5px;
-    padding: 10px;
-    text-align: center;
-}
-.name-header h1{
-    margin: 0;
-}
+
 .networks{
     margin: 5px;
     padding: 10px;
@@ -48,22 +29,35 @@ header{
     justify-content: center;
 }
 .networks a{
+    font-size: 20px;
     margin: 7px;
-    padding-top: 10px;
     text-decoration: none;
     text-align: center;
-    color: #F8F7FF;
+    color: #0B132B;
 
 }
 .introduction{
-    margin: 0;
-    height: 300px;
+    margin-top: 50px;
+    height: 500px;
     font-family: 'Assistant', sans-serif;
 }
-
+/* .image{
+    width:200px;
+    height:400px;
+    border-radius:50px;
+} */
 .container-lines{
+    height: 100%;
+    display: grid;
+    grid-template-rows: repeat(2,50%);
+    text-align: center;
+    /* font-family:'Bungee Shade', cursive; */
+    /* font-family:'Denk One', sans-serif; */
+    font-family:'Viga', sans-serif;
+    /* color: #40c9a2; */
     padding-top: 40px;
     padding-left: 60px;
+    
 }
 .container-lines h1{
     font-size: 40px;
@@ -80,10 +74,18 @@ header{
     margin-bottom: 10px;
     padding-right: 50px;
 }
-
+.name{
+    align-self: end;
+}
+#about{
+    margin: 0;
+    padding-right: 0;
+    padding-left: 0;
+}
 .container-about{
     font-size: 20px;
-    padding: 50px 80px 50px 80px;
+    padding: 0px 80px 0px 80px;
+    margin: 40px;
 }
 section{
     margin: 20px;
@@ -94,31 +96,41 @@ section{
     font-family: 'Assistant', sans-serif;
     padding-left:70px;
     padding-right: 70px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+#work{
+    margin: 0;
+    padding-right: 0;
+    padding-left: 0;
 }
 .container-allwork{
-    padding: 20px 32px 50px 32px;
+    padding: 20px 30px 50px 30px;
+    margin: 20px 70px 20px 70px;
 }
 
 .container-work{
     display: grid;
-    grid-gap: 20px;
     /* grid-template-columns: 1fr 1fr; */
       /* grid-template-columns: repeat(2,440px);  */
-    grid-template-columns: repeat(auto-fit, minmax(400px,380px)); 
+    grid-template-columns: repeat(auto-fit, minmax(300px,380px)); 
     grid-template-rows: 550px;
     
 
 }
 .container-project{
-    width: 270px;
-    height: 270px; 
+    width: 250px;
+    height: 250px; 
     padding: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     align-self: center;
     justify-self: center;
-    background-color: #7E7F9A;
+    background-color: #eec3d8;
+    border-color:#40c9a2 ;
+    border-style: solid;
+    border-width: 7px;
     border-radius: 30px;
     
 }
@@ -135,8 +147,67 @@ section{
 }
 
 .project-description{
-    background-color: #F9F9FF;
+    background-color: #0B132B;
 }
 .project-description p{
-    color: #8F9294;
+    color: #aaadaf;
+}
+.project-description i{
+    color: #40c9a2;
+}
+/* .project-description h1{
+    color: #eec3d8;
+} */
+.soft-skills{
+    margin-right: 0;
+    margin-left: 0;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.icons-skills{
+   width: 100px;
+}
+.container-skills{
+    display: flex;
+    justify-content: center;
+ 
+}
+.skill{
+    text-align: center;
+    margin: 20px;
+}
+#contact{
+    width: 100%;
+    display: grid;
+   justify-items:center;
+   grid-gap: 50px;
+}
+.container-contact{
+    width: 40%;
+    display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-gap:10px;
+   justify-items:center;
+
+}
+
+.container-contact i{
+    font-size: 90px;
+    color: #eec3d8;
+}
+
+.icons-tech{
+    margin: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-me{
+    margin: 20px 0 20px 0 ;
+    justify-self: start;
+}
+.icons-tech img{
+width: 100px;
+
 }
